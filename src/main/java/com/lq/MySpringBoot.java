@@ -15,7 +15,6 @@ public class MySpringBoot {
 
 		//项目的classes文件路径
 		String path = MySpringBoot.class.getResource("/").getPath();
-		System.out.println(path);
 
 		//这相当于在webapps下添加一个项目，其实一个项目也就是一个目录,路径可以是任意
 		Context context = tomcat.addWebapp("/",new File("src/main/webapp").getAbsolutePath());
